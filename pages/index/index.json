@@ -1,0 +1,5 @@
+{
+  "usingComponents" : {
+    "swiper-view" : "/components/swiper-view/swiper-view"
+  }
+}
