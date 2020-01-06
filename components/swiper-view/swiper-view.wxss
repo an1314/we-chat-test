@@ -4,7 +4,7 @@
   width: 96vw;
   margin: auto;
   border: rgb(221, 218, 218) 1rpx solid;
-  border-radius: 10rpx;
+  border-radius: 10rpx; 
 }
 .swiper-item{
   width: 96vw;
