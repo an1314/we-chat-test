@@ -1,24 +1,31 @@
 /* components/swiper-view/swiper-view.wxss */
 @import '/icon.wxss';
+.swiper-box{
+  height: 170px;
+}
 .swiper{
   width: 96vw;
-  margin: auto;
+  margin: 0px auto 20rpx auto;
   border: rgb(221, 218, 218) 1rpx solid;
   border-radius: 10rpx; 
 }
 .swiper-item{
   width: 96vw;
-  height: 90% !important;
+  height: 85% !important;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 .box{
   width: 24vw;
-  height: 140rpx;
+  height: 120rpx;
+  text-align: center;
 }
 .swiper-button{
   width: 18vw;
   margin-top: 30rpx;
   height: 100rpx;
+}
+.label{
+  font-size: 25rpx;
 }

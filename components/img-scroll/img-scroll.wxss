@@ -1,0 +1,23 @@
+/* components/img-scroll/img-scroll.wxss */
+.scroll-view{
+  width: 100%;
+
+}
+.img-scroll{
+  margin: 0 1vw;
+  overflow: hidden;
+  width: 96vw;
+  white-space: nowrap;
+  position: fixed;
+}
+.scroll-view-item {
+  display: inline-block;
+  
+  width: 38vw;
+  height: 35vh;
+}
+.scroll-view-item-image{
+  border-radius: 8rpx;
+  width: 35vw;
+  height: 30vh;
+}

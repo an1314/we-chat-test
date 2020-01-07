@@ -1,6 +1,7 @@
 {
   "usingComponents" : {
     "swiper-view" : "/components/swiper-view/swiper-view",
-    "header-view" : "/components/header-view/header-view"
+    "header-view" : "/components/header-view/header-view",
+    "img-scroll" : "/components/img-scroll/img-scroll"
   }
 }

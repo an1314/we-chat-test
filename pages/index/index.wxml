@@ -2,5 +2,6 @@
 	<view class="page-body">
     <header-view></header-view>
 		<swiper-view></swiper-view>
+		<img-scroll></img-scroll>
 	</view>
 </view>
