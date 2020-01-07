@@ -10,22 +10,22 @@ Component({
         [{
           icon: 'iconxitongguanli'
         },{
-          icon: 'iconxitongguanli'
+          icon: 'iconyaoshiguanli'
         },{
-          icon: 'iconxitongguanli'
+          icon: 'iconshujujiashicang'
         },{
-          icon: 'iconxitongguanli'
+          icon: 'iconkaoqinguanli'
         },{
-          icon: 'iconxitongguanli'
+          icon: 'iconshishichufangguanli'
         },{
-          icon: 'iconxitongguanli'
+          icon: 'iconchuliyichang'
         },{
-          icon: 'iconxitongguanli'
+          icon: 'iconyaodianguanli'
         },{
-          icon: 'iconxitongguanli'
+          icon: 'iconlenglianguanli'
         }],
         [{
-          icon: 'iconxitongguanli'
+          icon: 'icondayin'
         }]
       ]
     }
@@ -40,11 +40,13 @@ Component({
     duration: 500,
     background: ['demo-text-1', 'demo-text-2', 'demo-text-3'],
   },
-
+  
   /**
    * 组件的方法列表
    */
   methods: {
-
+    onTap(val) { 
+      console.log('aa', val)
+    }
   }
 })

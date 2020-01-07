@@ -1,0 +1,44 @@
+/* components/header-view/header-view.wxss */
+@import '/icon.wxss';
+.header-view{
+  display: flex;
+  box-shadow: 0rpx 3rpx 0rpx #cac5c5;
+  padding-bottom: 5rpx;
+  margin-bottom: 10rpx;
+  height: 120rpx;
+}
+.description{
+  width: 30vw;
+  display: inherit;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.label{
+  margin: auto;
+  font-size: 25rpx;
+  color: #cac5c5;
+}
+.title{
+  font-weight: bold;
+}
+.swiper-button{
+  width: 80rpx;
+  height: 80rpx;
+  padding-left: 23rpx;
+  line-height: 2.3;
+  border-radius: 40rpx;
+  background: rgba(241, 39, 117, 0.664)
+}
+.menu{
+  width: 68vw;
+  display: inherit;
+  justify-content: space-around;
+}
+.box{
+  padding: 8rpx 8rpx 8rpx 8rpx;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 45rpx;
+  background: rgba(233, 158, 187, 0.664);
+}

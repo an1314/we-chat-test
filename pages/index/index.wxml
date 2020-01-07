@@ -1,5 +1,6 @@
 <view class="container">
 	<view class="page-body">
+    <header-view></header-view>
 		<swiper-view></swiper-view>
 	</view>
 </view>

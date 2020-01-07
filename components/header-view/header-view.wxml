@@ -1,0 +1,25 @@
+<!--components/header-view/header-view.wxml-->
+<view class="header-view">
+  <view class="description">
+    <view class="row">
+      <view class="label">{{ label }}</view>
+      <view class="title">{{ title }}</view>
+    </view>
+
+
+  </view>
+  <view class="menu">
+    <block wx:for="{{menus}}" wx:key="*this" wx:for-index="idx" wx:for-item="menu">
+      <view class="menuitem">
+        <view class="box">
+        <button class="./iconfont/{{ menu.icon }} swiper-button" bindtap='onTap'></button>
+        
+        </view>
+        <view class="label">
+          {{ menu.label }}
+        </view>
+        
+      </view>
+    </block>
+  </view>
+</view>
