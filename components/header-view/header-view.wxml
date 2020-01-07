@@ -13,7 +13,6 @@
       <view class="menuitem">
         <view class="box">
         <button class="./iconfont/{{ menu.icon }} swiper-button" bindtap='onTap'></button>
-        
         </view>
         <view class="label">
           {{ menu.label }}
