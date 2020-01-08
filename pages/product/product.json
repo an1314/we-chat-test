@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "swiper-column": "/components/swiper-column/swiper-column"
+  }
 }

@@ -1,7 +1,7 @@
 /* components/swiper-view/swiper-view.wxss */
 @import '/icon.wxss';
 .swiper-box{
-  height: 54vw;
+  height: 55vw;
 }
 .swiper{
   width: 96vw;

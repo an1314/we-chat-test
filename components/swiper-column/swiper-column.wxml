@@ -1,0 +1,12 @@
+<view class='swiper-column'>
+  <!-- 左侧 -->
+  <view class='left'>
+    <block wx:for="{{ menus }}" wx:key="*this">
+      <view class="{{active == item.value?'selected':'normal'}}" id="{{item.value}}"      bindtap='switchNav'>{{ item.label }}</view>
+    </block>
+  </view>
+  <!-- 右侧 -->
+  <view class='right'>
+aasdasdasdasds
+  </view>
+</view>

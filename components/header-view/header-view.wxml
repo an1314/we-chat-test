@@ -17,7 +17,6 @@
         <view class="label">
           {{ menu.label }}
         </view>
-        
       </view>
     </block>
   </view>
