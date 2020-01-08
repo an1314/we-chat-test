@@ -1,0 +1,4 @@
+<!--components/menu-item/menu-item.wxml-->
+<view class="menu-item">
+  {{ data.label }}
+</view>

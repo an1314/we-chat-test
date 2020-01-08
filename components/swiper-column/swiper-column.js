@@ -3,6 +3,10 @@ Component({
   /**
    * 组件的属性列表
    */
+
+  options: {
+    multipleSlots: true // 在组件定义时的选项中启用多slot支持
+  },
   properties: {
     menus: {
       type: Array,
@@ -12,11 +16,44 @@ Component({
         list: [{
           label: '猫粮',
           url: ''
+        }, {
+          label: '猫粮',
+          url: ''
+        }, {
+          label: '猫粮',
+          url: ''
+        }, {
+          label: '猫粮',
+          url: ''
+        }, {
+          label: '猫粮',
+          url: ''
+        }, {
+          label: '猫粮',
+          url: ''
+        }, {
+          label: '猫粮',
+          url: ''
         }]
       }, {
         label: '狗粮',
         value: 'dog',
         list: [{
+          label: '狗粮',
+          url: ''
+        }, {
+          label: '狗粮',
+          url: ''
+        }, {
+          label: '狗粮',
+          url: ''
+        }, {
+          label: '狗粮',
+          url: ''
+        }, {
+          label: '狗粮',
+          url: ''
+        }, {
           label: '狗粮',
           url: ''
         }]
@@ -26,11 +63,32 @@ Component({
         list: [{
           label: '鼠粮',
           url: ''
+        }, {
+          label: '鼠粮',
+          url: ''
+        }, {
+          label: '鼠粮',
+          url: ''
+        }, {
+          label: '鼠粮',
+          url: ''
         }]
       }, {
         label: '猪饲料',
         value: 'pig',
         list: [{
+          label: '猪饲料',
+          url: ''
+        }, {
+          label: '猪饲料',
+          url: ''
+        }, {
+          label: '猪饲料',
+          url: ''
+        }, {
+          label: '猪饲料',
+          url: ''
+        }, {
           label: '猪饲料',
           url: ''
         }]
@@ -39,6 +97,24 @@ Component({
         value: 'jsl',
         list: [{
           label: '鸡饲料',
+          url: ''
+        }, {
+          label: '猪饲料',
+          url: ''
+        }, {
+          label: '猪饲料',
+          url: ''
+        }, {
+          label: '猪饲料',
+          url: ''
+        }, {
+          label: '猪饲料',
+          url: ''
+        }, {
+          label: '猪饲料',
+          url: ''
+        }, {
+          label: '猪饲料',
           url: ''
         }]
       }, {
@@ -76,84 +152,84 @@ Component({
           label: '未知',
           url: ''
         }]
-        }, {
+      }, {
+        label: '未知1',
+        value: 'wz1',
+        list: [{
           label: '未知1',
-          value: 'wz1',
-          list: [{
-            label: '未知1',
-            url: ''
-          }]
-        }, {
-          label: '未知2',
-          value: 'wz2',
-          list: [{
-            label: '未知2',
-            url: ''
-          }]
-        }, {
-          label: '未知3',
-          value: 'wz3',
-          list: [{
-            label: '未知3',
-            url: ''
-          }]
-        }, {
-          label: '未知4',
-          value: 'wz4',
-          list: [{
-            label: '未知4',
-            url: ''
-          }]
-        }, {
-          label: '未知5',
-          value: 'wz5',
-          list: [{
-            label: '未知5',
-            url: ''
-          }]
-        }, {
-          label: '未知6',
-          value: 'wz6',
-          list: [{
-            label: '未知6',
-            url: ''
-          }]
-        }, {
-          label: '未知7',
-          value: 'wz7',
-          list: [{
-            label: '未知7',
-            url: ''
-          }]
-        }, {
-          label: '未知8',
-          value: 'wz8',
-          list: [{
-            label: '未知8',
-            url: ''
-          }]
-        }, {
-          label: '未知9',
-          value: 'wz9',
-          list: [{
-            label: '未知9',
-            url: ''
-          }]
-        }, {
-          label: '未知10',
-          value: 'wz10',
-          list: [{
-            label: '未知10',
-            url: ''
-          }]
-        }, {
-          label: '未知11',
-          value: 'wz11',
-          list: [{
-            label: '未知11',
-            url: ''
-          }]
+          url: ''
         }]
+      }, {
+        label: '未知2',
+        value: 'wz2',
+        list: [{
+          label: '未知2',
+          url: ''
+        }]
+      }, {
+        label: '未知3',
+        value: 'wz3',
+        list: [{
+          label: '未知3',
+          url: ''
+        }]
+      }, {
+        label: '未知4',
+        value: 'wz4',
+        list: [{
+          label: '未知4',
+          url: ''
+        }]
+      }, {
+        label: '未知5',
+        value: 'wz5',
+        list: [{
+          label: '未知5',
+          url: ''
+        }]
+      }, {
+        label: '未知6',
+        value: 'wz6',
+        list: [{
+          label: '未知6',
+          url: ''
+        }]
+      }, {
+        label: '未知7',
+        value: 'wz7',
+        list: [{
+          label: '未知7',
+          url: ''
+        }]
+      }, {
+        label: '未知8',
+        value: 'wz8',
+        list: [{
+          label: '未知8',
+          url: ''
+        }]
+      }, {
+        label: '未知9',
+        value: 'wz9',
+        list: [{
+          label: '未知9',
+          url: ''
+        }]
+      }, {
+        label: '未知10',
+        value: 'wz10',
+        list: [{
+          label: '未知10',
+          url: ''
+        }]
+      }, {
+        label: '未知11',
+        value: 'wz11',
+        list: [{
+          label: '未知11',
+          url: ''
+        }]
+      }]
     }
   },
 
@@ -162,7 +238,8 @@ Component({
    */
   data: {
     active: 'cat',
-    currentTab: 'cat'
+    currentTab: 'cat',
+    fixedItem: 'cat'
   },
 
 
@@ -170,7 +247,7 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    switchNav: function(e) {
+    switchNav: function (e) {
       var page = this;
       var id = e.target.id;
       if (this.data.currentTab == id) {
@@ -184,5 +261,26 @@ Component({
         active: id
       });
     },
+    onScroll(event) {
+
+      // 获取所有标题元素
+      let query = wx.createSelectorQuery().in(this);
+      query.selectAll('.menu-title').boundingClientRect();
+
+      query.exec((rect) => {
+        try {
+          rect[0].forEach(item => {
+            if (item.top < 20 && item.top > -20 && item.id != this.data.active+'-item') {
+              this.setData({
+                fixedItem: item.id.split('-')[0],
+                active: item.id.split('-')[0]
+              })
+              throw new Error("找到节点！");
+            }
+          })
+        } catch (e) {}
+      })
+
+    }
   }
 })

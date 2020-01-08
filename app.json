@@ -1,8 +1,9 @@
 {
   "pages": [
+    "pages/product/product",
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/product/product"
+    "pages/logs/logs"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -12,6 +13,7 @@
   },
   "tabBar": {
     "list": [
+      
       {
         "pagePath": "pages/index/index",
         "text": "首页"

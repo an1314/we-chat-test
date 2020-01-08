@@ -1,4 +1,7 @@
 {
   "component": true,
-  "usingComponents": {}
+  "usingComponents": {
+    "title" : "/components/title/title",
+    "menu-item" : "/components/menu-item/menu-item"
+  }
 }

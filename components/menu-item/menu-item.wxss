@@ -1,0 +1,5 @@
+/* components/menu-item/menu-item.wxss */
+.menu-item{
+  height: 30vw;
+  width: 100%;
+}
