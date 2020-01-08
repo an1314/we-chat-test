@@ -1,7 +1,7 @@
 /* components/swiper-view/swiper-view.wxss */
 @import '/icon.wxss';
 .swiper-box{
-  height: 170px;
+  height: 54vw;
 }
 .swiper{
   width: 96vw;
@@ -18,13 +18,21 @@
 }
 .box{
   width: 24vw;
-  height: 120rpx;
+  height: 18vw;
   text-align: center;
 }
 .swiper-button{
-  width: 18vw;
-  margin-top: 30rpx;
-  height: 100rpx;
+  padding: 0px;
+  margin: 2vw auto 0 auto;
+  border: 1px solid rgb(231, 229, 229);
+  border-radius: 1vw;
+  width: 15vw;
+  line-height: 15vw;
+  height: 15vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(241, 239, 239)
 }
 .label{
   font-size: 25rpx;

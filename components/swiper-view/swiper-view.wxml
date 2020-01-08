@@ -4,7 +4,9 @@
       <swiper-item class="swiper-item">
         <block wx:for="{{item}}" wx:key="*this" wx:for-index="idx" wx:for-item="menu">
           <view class="box">
-            <button class="./iconfont/{{ menu.icon }} swiper-button" bindtap='onTap'></button>
+            <view bindtap='onTap'class="swiper-button">
+              <text class="./iconfont/{{ menu.icon }}" ></text>
+            </view>
             <text class="label">测试</text>
           </view>
         </block>

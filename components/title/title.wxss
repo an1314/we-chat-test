@@ -1,0 +1,33 @@
+/* components/title/title.wxss */
+.title{
+  text-align: center;
+  margin-bottom: 10rpx;
+  font-size: 40rpx;
+  line-height: 40rpx;
+}
+.description{
+  font-size: 30rpx;
+  line-height: 40rpx;
+  vertical-align: middle;
+
+}
+.leftline{
+  font-size: 40rpx;
+  font-weight: bold;
+  margin: 0rpx 50rpx;
+  background: linear-gradient(to right, #1ae8c8, #4a8aff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  vertical-align: middle;
+}
+.rightline{
+  font-size: 40rpx;
+  font-weight: bold;
+  margin: 0rpx 50rpx;
+  background: linear-gradient(to left, #1ae8c8, #4a8aff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  vertical-align: middle;
+}

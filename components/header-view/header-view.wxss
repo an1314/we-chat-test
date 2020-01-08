@@ -23,11 +23,11 @@
   font-weight: bold;
 }
 .swiper-button{
-  width: 80rpx;
-  height: 80rpx;
-  padding-left: 23rpx;
-  line-height: 2.3;
-  border-radius: 40rpx;
+  width: 8vw;
+  height: 8vw;
+  text-align: center;
+  line-height: 8vw;
+  border-radius: 4vw;
   background: rgba(241, 39, 117, 0.664)
 }
 .menu{
@@ -36,9 +36,11 @@
   justify-content: space-around;
 }
 .box{
-  padding: 8rpx 8rpx 8rpx 8rpx;
-  width: 80rpx;
-  height: 80rpx;
-  border-radius: 45rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10vw;
+  height: 10vw;
+  border-radius: 5vw;
   background: rgba(233, 158, 187, 0.664);
 }

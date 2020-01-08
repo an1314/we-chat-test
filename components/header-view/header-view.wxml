@@ -12,7 +12,7 @@
     <block wx:for="{{menus}}" wx:key="*this" wx:for-index="idx" wx:for-item="menu">
       <view class="menuitem">
         <view class="box">
-        <button class="./iconfont/{{ menu.icon }} swiper-button" bindtap='onTap'></button>
+        <text class="./iconfont/{{ menu.icon }} swiper-button" bindtap='onTap'></text>
         </view>
         <view class="label">
           {{ menu.label }}

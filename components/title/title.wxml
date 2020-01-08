@@ -1,0 +1,6 @@
+<!--components/title/title.wxml-->
+<view class="title">
+  <text class="leftline">一</text>
+  <text class="description"><slot></slot></text>
+  <text class="rightline">一</text>
+</view>

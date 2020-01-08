@@ -8,13 +8,11 @@
   overflow: hidden;
   width: 96vw;
   white-space: nowrap;
-  position: fixed;
 }
 .scroll-view-item {
-  display: inline-block;
-  
+  display: inline-block; 
   width: 38vw;
-  height: 35vh;
+  height: 30vh;
 }
 .scroll-view-item-image{
   border-radius: 8rpx;

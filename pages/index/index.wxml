@@ -2,6 +2,8 @@
 	<view class="page-body">
     <header-view></header-view>
 		<swiper-view></swiper-view>
+    <title>小猫靓照</title>
 		<img-scroll></img-scroll>
+    
 	</view>
 </view>
