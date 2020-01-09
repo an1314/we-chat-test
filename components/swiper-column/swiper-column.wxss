@@ -8,6 +8,10 @@
   font-family: "Microsoft YaHei"
 }
 .right-view{
+  padding-top: 40rpx;
+  height: 100vh;
+}
+.left-view{
   height: 100vh;
 }
 .left{

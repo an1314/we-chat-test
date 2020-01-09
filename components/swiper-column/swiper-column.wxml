@@ -1,20 +1,22 @@
 <view class='swiper-column'>
-	<!-- 左侧 -->
-  
-	<view class='left'>
-		<block wx:for="{{ menus }}" wx:key="index">
-			<view class="{{active == item.value?'selected':'normal'}} view" id="{{item.value}}" bindtap='switchNav'>{{ item.label }}</view>
-		</block>
-	</view>
-	<!-- 右侧 -->
-	<view class='right'>
-		<scroll-view class='right-view' scroll-y="true" scroll-into-view="{{ active }}-item" bindscroll="onScroll" scroll-with-animation="true">
-			<block wx:for="{{ menus }}" wx:key="idx" wx:for-index="idx" wx:for-item="menuItem">
-				<title id="{{ menuItem.value }}-item" class="menu-title {{ menuItem.value == fixedItem ? 'fixedItem':'' }}">{{ menuItem.label }}</title>
-				<block wx:for="{{ menuItem.list }}" wx:key="index">
-					<menu-item data="{{item}}"></menu-item>
-				</block>
-			</block>
-		</scroll-view>
-	</view>
+  <!-- 左侧 -->
+
+  <view class='left'>
+    <scroll-view class='left-view' scroll-y="true" scroll-into-view="{{ active }}" scroll-with-animation="true">
+      <block wx:for="{{ menus }}" wx:key="index">
+        <view class="{{active == item.value?'selected':'normal'}} view" id="{{item.value}}" bindtap='switchNav'>{{ item.label }}</view>
+      </block>
+    </scroll-view>
+  </view>
+  <!-- 右侧 -->
+  <view class='right'>
+    <scroll-view class='right-view' scroll-y="true" scroll-into-view="{{ active }}-item" bindscroll="onScroll" scroll-with-animation="true">
+      <block wx:for="{{ menus }}" wx:key="idx" wx:for-index="idx" wx:for-item="menuItem">
+        <title id="{{ menuItem.value }}-item" class="menu-title {{ menuItem.value == fixedItem ? 'fixedItem':'' }}">{{ menuItem.label }}</title>
+        <block wx:for="{{ menuItem.list }}" wx:key="index">
+          <menu-item data="{{item}}"></menu-item>
+        </block>
+      </block>
+    </scroll-view>
+  </view>
 </view>

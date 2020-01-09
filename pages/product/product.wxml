@@ -1,5 +1,4 @@
 <view>
-  <swiper-column>
-    <view class="menuItem" slot-scope="{item}" slot="menu"> 1111111</view>
+  <swiper-column id="swiper-column"  menus="{{menus}}">
   </swiper-column>
 </view>

@@ -10,226 +10,16 @@ Component({
   properties: {
     menus: {
       type: Array,
-      value: [{
-        label: '猫粮',
-        value: 'cat',
-        list: [{
-          label: '猫粮',
-          url: ''
-        }, {
-          label: '猫粮',
-          url: ''
-        }, {
-          label: '猫粮',
-          url: ''
-        }, {
-          label: '猫粮',
-          url: ''
-        }, {
-          label: '猫粮',
-          url: ''
-        }, {
-          label: '猫粮',
-          url: ''
-        }, {
-          label: '猫粮',
-          url: ''
-        }]
-      }, {
-        label: '狗粮',
-        value: 'dog',
-        list: [{
-          label: '狗粮',
-          url: ''
-        }, {
-          label: '狗粮',
-          url: ''
-        }, {
-          label: '狗粮',
-          url: ''
-        }, {
-          label: '狗粮',
-          url: ''
-        }, {
-          label: '狗粮',
-          url: ''
-        }, {
-          label: '狗粮',
-          url: ''
-        }]
-      }, {
-        label: '鼠粮',
-        value: 'mouse',
-        list: [{
-          label: '鼠粮',
-          url: ''
-        }, {
-          label: '鼠粮',
-          url: ''
-        }, {
-          label: '鼠粮',
-          url: ''
-        }, {
-          label: '鼠粮',
-          url: ''
-        }]
-      }, {
-        label: '猪饲料',
-        value: 'pig',
-        list: [{
-          label: '猪饲料',
-          url: ''
-        }, {
-          label: '猪饲料',
-          url: ''
-        }, {
-          label: '猪饲料',
-          url: ''
-        }, {
-          label: '猪饲料',
-          url: ''
-        }, {
-          label: '猪饲料',
-          url: ''
-        }]
-      }, {
-        label: '鸡饲料',
-        value: 'jsl',
-        list: [{
-          label: '鸡饲料',
-          url: ''
-        }, {
-          label: '猪饲料',
-          url: ''
-        }, {
-          label: '猪饲料',
-          url: ''
-        }, {
-          label: '猪饲料',
-          url: ''
-        }, {
-          label: '猪饲料',
-          url: ''
-        }, {
-          label: '猪饲料',
-          url: ''
-        }, {
-          label: '猪饲料',
-          url: ''
-        }]
-      }, {
-        label: '马饲料',
-        value: 'msl',
-        list: [{
-          label: '马饲料',
-          url: ''
-        }]
-      }, {
-        label: '牛饲料',
-        value: 'nsl',
-        list: [{
-          label: '牛饲料',
-          url: ''
-        }]
-      }, {
-        label: '羊饲料',
-        value: 'ysl',
-        list: [{
-          label: '羊饲料',
-          url: ''
-        }]
-      }, {
-        label: '龙饲料',
-        value: 'lsl',
-        list: [{
-          label: '龙饲料',
-          url: ''
-        }]
-      }, {
-        label: '未知',
-        value: 'wz',
-        list: [{
-          label: '未知',
-          url: ''
-        }]
-      }, {
-        label: '未知1',
-        value: 'wz1',
-        list: [{
-          label: '未知1',
-          url: ''
-        }]
-      }, {
-        label: '未知2',
-        value: 'wz2',
-        list: [{
-          label: '未知2',
-          url: ''
-        }]
-      }, {
-        label: '未知3',
-        value: 'wz3',
-        list: [{
-          label: '未知3',
-          url: ''
-        }]
-      }, {
-        label: '未知4',
-        value: 'wz4',
-        list: [{
-          label: '未知4',
-          url: ''
-        }]
-      }, {
-        label: '未知5',
-        value: 'wz5',
-        list: [{
-          label: '未知5',
-          url: ''
-        }]
-      }, {
-        label: '未知6',
-        value: 'wz6',
-        list: [{
-          label: '未知6',
-          url: ''
-        }]
-      }, {
-        label: '未知7',
-        value: 'wz7',
-        list: [{
-          label: '未知7',
-          url: ''
-        }]
-      }, {
-        label: '未知8',
-        value: 'wz8',
-        list: [{
-          label: '未知8',
-          url: ''
-        }]
-      }, {
-        label: '未知9',
-        value: 'wz9',
-        list: [{
-          label: '未知9',
-          url: ''
-        }]
-      }, {
-        label: '未知10',
-        value: 'wz10',
-        list: [{
-          label: '未知10',
-          url: ''
-        }]
-      }, {
-        label: '未知11',
-        value: 'wz11',
-        list: [{
-          label: '未知11',
-          url: ''
-        }]
-      }]
+      observer: function (menus){
+        // console.log(menus)
+        // let query = wx.createSelectorQuery().in(this);
+        // query.selectAll('.menu-title').boundingClientRect();
+
+        // query.exec((rect) => {
+        //   console.log(rect)
+        // })
+      },
+      value: []
     }
   },
 
@@ -239,7 +29,9 @@ Component({
   data: {
     active: 'cat',
     currentTab: 'cat',
-    fixedItem: 'cat'
+    fixedItem: 'cat',
+    // 记录标题位置
+    menuPosition: []
   },
 
 
@@ -250,36 +42,53 @@ Component({
     switchNav: function (e) {
       var page = this;
       var id = e.target.id;
-      if (this.data.currentTab == id) {
-        return false;
-      } else {
-        page.setData({
-          currentTab: id
-        });
-      }
       page.setData({
-        active: id
+        active: id,
+        fixedItem: id,
       });
     },
-    onScroll(event) {
-
-      // 获取所有标题元素
+    refreshView(){
+      // 在组件实例进入页面节点树时执行
       let query = wx.createSelectorQuery().in(this);
       query.selectAll('.menu-title').boundingClientRect();
 
       query.exec((rect) => {
-        try {
-          rect[0].forEach(item => {
-            if (item.top < 20 && item.top > -20 && item.id != this.data.active+'-item') {
-              this.setData({
-                fixedItem: item.id.split('-')[0],
-                active: item.id.split('-')[0]
-              })
-              throw new Error("找到节点！");
-            }
-          })
-        } catch (e) {}
+        this.setData({
+          menuPosition: rect[0]
+        })
       })
+    },
+    onScroll(event) {
+      let top = event.detail.scrollTop
+      console.log(event.detail.scrollTop)
+      let index = this.data.menuPosition.findIndex(item => item.top -50 >= top);
+      console.log('index', index)
+      let currentTab = this.data.menuPosition[index-1];
+      let tabId = currentTab && currentTab.id.split('-')[0] || this.data.menuPosition[0].id.split('-')[0];
+      console.log(tabId)
+      if (tabId != this.data.active){
+        this.setData({
+          fixedItem: tabId,
+          active: tabId
+        })
+      }
+      // 获取所有标题元素
+      // let query = wx.createSelectorQuery().in(this);
+      // query.selectAll('.menu-title').boundingClientRect();
+
+      // query.exec((rect) => {
+      //   try {
+      //     rect[0].forEach(item => {
+      //       if (item.top < 20 && item.top > -20 && item.id != this.data.active+'-item') {
+      //         this.setData({
+      //           fixedItem: item.id.split('-')[0],
+      //           active: item.id.split('-')[0]
+      //         })
+      //         throw new Error("找到节点！");
+      //       }
+      //     })
+      //   } catch (e) {}
+      // })
 
     }
   }

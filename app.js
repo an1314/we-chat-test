@@ -1,4 +1,5 @@
 //app.js
+wx.haha = 'aa'
 App({
   onLaunch: function () {
     // 展示本地存储能力
