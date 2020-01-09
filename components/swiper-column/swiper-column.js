@@ -45,6 +45,7 @@ Component({
       page.setData({
         active: id,
         fixedItem: id,
+        currentTab: id
       });
     },
     refreshView(){
