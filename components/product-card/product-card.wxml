@@ -1,0 +1,9 @@
+<!--components/product-card/product-card.wxml-->
+<view class="product-card" >
+  <view class="left">
+    <image class="product-card-image"  mode="aspectFit" src="{{data.url}}">
+    </image>
+  </view>
+  <view class="right">
+  </view>
+</view>

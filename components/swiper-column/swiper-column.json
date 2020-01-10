@@ -2,6 +2,7 @@
   "component": true,
   "usingComponents": {
     "title" : "/components/title/title",
-    "menu-item" : "/components/menu-item/menu-item"
+    "menu-item" : "/components/menu-item/menu-item",
+    "product-card": "/components/product-card/product-card"
   }
 }

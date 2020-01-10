@@ -1,0 +1,15 @@
+/* components/product-card/product-card.wxss */
+.product-card{
+  margin: 0rpx auto 20rpx auto;
+  width: 90%;
+  height: 40vw;
+  background: red
+}
+.left{
+  width: 40%;
+  height: 40vw;
+  overflow: hidden; 
+}
+.product-card-image{
+  width: 100%;
+}

@@ -14,7 +14,8 @@
       <block wx:for="{{ menus }}" wx:key="idx" wx:for-index="idx" wx:for-item="menuItem">
         <title id="{{ menuItem.value }}-item" class="menu-title {{ menuItem.value == fixedItem ? 'fixedItem':'' }}">{{ menuItem.label }}</title>
         <block wx:for="{{ menuItem.list }}" wx:key="index">
-          <menu-item data="{{item}}"></menu-item>
+          <product-card ></product-card>
+          <!-- <menu-item data="{{item}}"></menu-item> -->
         </block>
       </block>
     </scroll-view>
