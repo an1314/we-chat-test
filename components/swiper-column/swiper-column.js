@@ -29,7 +29,8 @@ Component({
   data: {
     active: 'cat',
     currentTab: 'cat',
-    fixedItem: 'cat',
+    fixedItem: '',
+    scrollLower: false,
     // 记录标题位置
     menuPosition: []
   },
@@ -44,33 +45,45 @@ Component({
       var id = e.target.id;
       page.setData({
         active: id,
-        fixedItem: id,
+        fixedItem: "",
         currentTab: id
       });
     },
     refreshView(){
+      console.log(wx.getSystemInfoSync().windowHeight)
+
       // 在组件实例进入页面节点树时执行
       let query = wx.createSelectorQuery().in(this);
       query.selectAll('.menu-title').boundingClientRect();
-
+      query.select('#scroll-view').boundingClientRect();
       query.exec((rect) => {
         this.setData({
           menuPosition: rect[0]
         })
       })
     },
+    onScrollLower(event){
+      this.setData({
+        scrollLower: true
+      })
+    },
     onScroll(event) {
-      let top = event.detail.scrollTop
-      console.log(event.detail.scrollTop)
-      let index = this.data.menuPosition.findIndex(item => item.top -50 >= top);
-      console.log('index', index)
+      let hight = wx.getSystemInfoSync().windowHeight;
+      let top = event.detail.scrollTop;
+      let scrollHeight = event.detail.scrollHeight;
+      let index = this.data.menuPosition.findIndex(item => item.top -45 >= top);
+      let activeIndex = this.data.menuPosition.findIndex(item => item.id == this.data.active + "-item");
       let currentTab = this.data.menuPosition[index-1];
       let tabId = currentTab && currentTab.id.split('-')[0] || this.data.menuPosition[0].id.split('-')[0];
-      console.log(tabId)
-      if (tabId != this.data.active){
+      if (tabId != this.data.fixedItem){
         this.setData({
           fixedItem: tabId,
-          active: tabId
+          active: (scrollHeight - top - 30 > hight) ? tabId: this.data.active
+        })
+      }
+      if (this.data.scrollLower){
+        this.setData({
+          scrollLower: false
         })
       }
       // 获取所有标题元素

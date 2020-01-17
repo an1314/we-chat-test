@@ -1,0 +1,9 @@
+/* components/number-select/number-select.wxss */
+@import '/icon.wxss';
+.number-select{
+  text-align: right;
+  font-size: 50rpx !important
+}
+.iconfont{
+  font-size: 20px;
+}

@@ -1,9 +1,13 @@
 <!--components/product-card/product-card.wxml-->
 <view class="product-card" >
   <view class="left">
-    <image class="product-card-image"  mode="aspectFit" src="{{data.url}}">
+    <image class="product-card-image"  mode="scaleToFill" src="{{data.url}}">
     </image>
   </view>
   <view class="right">
+    <!-- <view>aaaaaa</view> -->
+    <view class="card-desc">bbbbbb</view>
+    <view class="card-price"><text>19.5</text>元</view>
+    <view class="number-select"><number-select bindchange="onNumSelectChange"></number-select></view>
   </view>
 </view>

@@ -1,4 +1,6 @@
 {
   "component": true,
-  "usingComponents": {}
+  "usingComponents": {
+    "number-select": "/components/number-select/number-select"
+  }
 }

@@ -10,8 +10,9 @@
   </view>
   <!-- 右侧 -->
   <view class='right'>
-    <scroll-view class='right-view' scroll-y="true" scroll-into-view="{{ currentTab }}-item" bindscroll="onScroll" scroll-with-animation="false">
+    <scroll-view class='right-view' id="scroll-view" scroll-y="true" scroll-into-view="{{ currentTab }}-item" bindscroll="onScroll" bindscrolltolower="onScrollLower" scroll-with-animation="false">
       <block wx:for="{{ menus }}" wx:key="idx" wx:for-index="idx" wx:for-item="menuItem">
+        <title wx:if="{{idx == 0 && menuItem.value == fixedItem}}">占位</title>
         <title id="{{ menuItem.value }}-item" class="menu-title {{ menuItem.value == fixedItem ? 'fixedItem':'' }}">{{ menuItem.label }}</title>
         <block wx:for="{{ menuItem.list }}" wx:key="index">
           <product-card ></product-card>
